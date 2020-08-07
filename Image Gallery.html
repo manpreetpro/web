@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		padding-top: 70px;
+	}
+
+	.navbar-default {
+		background: #2c3e50;
+	}
+
+	.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+		color: white;
+		transition: 0.4s;
+	}
+
+	#linkhover:hover {
+		color: #c2c2c2;
+	}
+
+	.jumbotron {
+		margin-bottom: -0.5px;
+	}
+
+	#images {
+		padding-top: 70px;
+		margin-top: -70px;
+	}
+
+	#imghover {
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="container-fluid">
+
+    		<div class="navbar-header">
+     			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			<!-- Brand Logo -->
+      			<a id="linkhover" id="linkhover" class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Image Gallery</a>
+   		 	</div>
+
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    			<!-- Links -->
+     			<ul class="nav navbar-nav">
+        			<li><a id="linkhover" href="#">About</a></li>
+       				<li><a id="linkhover" href="#">Contact</a></li>
+      			</ul>
+     			<ul class="nav navbar-nav navbar-right">
+        			<li><a id="linkhover" href="#">Sign Up</a></li>
+        			<li><a id="linkhover" href="#">Login</a></li>
+      			</ul>
+    		</div>
+  		</div>
+		</div>	
+	</nav>
+
+	<!-- Jumbotron -->
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+  				<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Image Gallery</h1>
+  				<p>Get Amazing Clicks From Our Collection</p>
+  				<p><a id="linkhover" class="btn btn-primary btn-lg" href="#images" role="button">See Collection</a></p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- Images -->
+	<div class="container" id="images">
+		<div class="row">
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="http://i.imgur.com/qK42fUu.jpg" title="Bridge">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Desert">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Random Pattern">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9" title="Mountains with Greenery">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Red Clouds">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Sea">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Yellow Background">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="City">
+  				</div>
+  			</div>
+  			<div class="col-lg-4 col-md-4 col-sm-6">
+  				<div id="imghover" class="thumbnail">
+  					<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" title="Blue Mountains">
+  				</div>
+  			</div>
+  		</div>
+	</div>
+</body>
+</html>
